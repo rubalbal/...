@@ -1,0 +1,51 @@
+import java.until. *;
+
+public class ,MainApllication{
+
+     public static void main(String[] args){
+          Casino C = new Casino() ;
+          c.OrganizeNewGame() ;
+     }
+}
+
+class Casino{
+      Player p1 = new Player () ;
+      Game g1 = new Game () ;
+      String username ; 
+      Scanner sc = new Scanner(System.in) ; 
+
+      public void OrganiserGame(){
+          System.out.println("Welcome to our Casino : would you like to play a game ?")
+
+          userAnswer = sc. nextLine ();
+
+          if (userAnswer.equals("y")){
+          System.out.println("let's get started");
+          gl.PlayGame();
+          }
+          else {System.out.println("Good bye!");}
+     }
+}
+
+class Game{
+     Random rand = new Random() ;
+     private int ComputerGuess = -1 ;
+
+     public void Playgame(){
+         System.out.prinln("Guess a number from 1 to 100");
+         System.out.prinln("And I will guess a game");
+         System.out.prinln("If your guess is within 20 of my guess : then you win . Else I will win "); 
+
+         ComputerGuess = ComputerGuess();
+         System.out.println("Computer Guess is " + ComputerGuess);
+    }
+    public int ComputerGuess() {
+    int programGuess = rand.nextInt(100);
+          return programguess; 
+    }
+}
+
+class Player{               
+      
+
+
